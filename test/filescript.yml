@@ -1,6 +1,6 @@
 ---
 - name: create a file
-  hosts: root
+  hosts: jenkins
   tasks:
     - name: file
       file:
