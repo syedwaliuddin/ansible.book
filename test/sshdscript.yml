@@ -1,0 +1,11 @@
+---
+- name: sshd
+  hosts: all
+  tasks:
+  - name: status
+    shell: service ssh status
+  - name: update
+    apt:
+      upgrade: yes
+      update_cache: yes
+    become: true

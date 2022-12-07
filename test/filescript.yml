@@ -1,0 +1,10 @@
+---
+- name: create a file
+  hosts: root
+  tasks:
+    - name: file
+      file:
+        path: /root/testfile
+        state: directory
+        mode: 0777
+      become: true
