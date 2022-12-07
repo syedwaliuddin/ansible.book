@@ -4,7 +4,7 @@
   tasks:
     - name: file
       file:
-        path: /root/testfile
+        path: home/ubuntu/testfile
         state: directory
         mode: 0777
       become: true
